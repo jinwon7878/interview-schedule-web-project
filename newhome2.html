@@ -22,7 +22,7 @@
     <!--Twitter Card-->
     <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
     <meta property="twitter:card" content="summary" />
-    <meta property="twitter:site" content="이때어때" />
+    <meta property="twitter:site" content="이때어때" /> 
     <meta property="twitter:title" content="이때어때_한번에 끝내는 면접 시간 공유" />
     <meta property="twitter:description" content="이때어때는 면접관과 면접자의 시간 조율 편리성을 위해 만들어졌습니다." />
     <!-- <meta property="twitter:image" content="./images/이때어때_seo.jpg" /> -->
@@ -46,30 +46,24 @@
 
 <body>
     <img id="banner" src="./images/banner.png" style="filter:brightness(80%); border-radius: 10px;"></img>
-    <main>
-        <div class="main-container">
-            <div class="section">
-                <h1 class="text"><span class="subject">이때어때</span><br>면접관과 면접자의 시간 조율 사이트</h1>
+    <div class="main-container">
+        <div class="home2-container">
+            <div class="section2">
+                <p class="text">안녕하세요 <span class="user_name">땡땡땡</span>님!<p>
+                <p class="text">아래 이벤트 생성 버튼을 눌러주세요</p>
             </div>
-            <div class="section">
-                <h1 class="text">이떄어때 설명</h1>
+            <div class="section2">
+                <button class="select_btn" onclick="location.href='./event.html'">
+                    <p>이벤트 생성 및 확인</p>
+                    <p class="sub_text">면접관용</p>
+                </button>
+                <button class="select_btn" onclick="location.href='./timetable.html'">
+                    <p>면접 가능 시간 체크</p>
+                    <p class="sub_text">면접자용</p>
+                </button>
             </div>
         </div>
-    </main>
-    <div style="text-align:center;">
-        <button class="event_btn" onclick="document.querySelector('.login-container').style.display='flex';">이벤트 생성하기</button>
-        <h1 class="text" id="event_text">이벤트 생성하기 버튼을 눌러주세요!</h1>
     </div>
-    <!-- login screen(display:none) -->
-    <div class="login-container">
-        <form class="login-form">
-            <h1>login</h1>
-            <input type="text" id="username" name="id" placeholder="Email">
-            <input type="password" id="password" name="password" placeholder="password">
-            <button type="submit" onclick="">login</button>
-        </form>
-    </div>
-
 </body>
 
 </html>

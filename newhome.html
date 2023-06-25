@@ -56,16 +56,19 @@
             </div>
         </div>
     </main>
-    <div style="text-align:center;">
+    <div class="event" style="text-align:center;">
         <button class="event_btn" onclick="document.querySelector('.login-container').style.display='flex';">이벤트 생성하기</button>
         <h1 class="text" id="event_text">이벤트 생성하기 버튼을 눌러주세요!</h1>
     </div>
     <!-- login screen(display:none) -->
     <div class="login-container">
+        <div class="close">
+            <button class="close_btn" onclick="document.querySelector('.login-container').style.display='none';">x</button>
+        </div>
         <form class="login-form">
             <h1>login</h1>
             <input type="text" id="username" name="id" placeholder="Email">
-            <input type="password" id="password" name="password" placeholder="password">
+            <input type="password" id="password" name="password" placeholder="Password">
             <button type="submit" onclick="">login</button>
         </form>
     </div>
