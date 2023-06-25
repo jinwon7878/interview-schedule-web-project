@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>이때어때 login</title>
+</head>
+
+<body>
+    <img id="banner" src="./images/banner.png" style="
+            position:absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);"></img>
+    <div class="login-wrapper">
+        <h2>login</h2>
+        <form method="post" action="서버url" id="login-form">
+            <input type="text" name="userName" placeholder="Email">
+            <input type="password" name="userPassword" placeholder="password">
+            <label for="remember-check">
+                <input type="checkbox" id="remember-check">아이디 저장하기
+            </label>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+
+</html>

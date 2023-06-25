@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+body{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.login-wrapper{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 350px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.login-wrapper > h2{
+    font-size: 24px;
+    color: #6A24FE;
+    margin-bottom: 20px;
+}
+#login-form > input{
+    width: 100%;
+    height: 48px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+}
+#login-form > input::placeholder{
+    color: #D2D2D2;
+}
+#login-form > input[type="submit"]{
+    color: #fff;
+    font-size: 16px;
+    background-color: #6A24FE;
+    margin-top: 20px;
+}
+input[type="checkbox"]{
+    margin-right:3%;
+}
+
+#banner {
+    position: fixed;
+    /*고정*/
+    left: 10px;
+    /*위치 지정 : 오른쪽에서 몇 px에 위치, 왼쪽 배너이면 left : 2px; */
+    top: 10px;
+    /* 위치 지정 : 상단에서 몇 px에 위치, 하단부터라면 bottom:48px; */
+    text-align: center;
+    /*중앙정렬*/
+    z-index: 1;
+}
+
+.section:nth-child(1){
+    position:relative;
+    color: rgb(35, 70, 126);
+    background: rgb(218, 226, 255);
+    height: 450px;
+}
+
+.section:nth-child(2){
+    position:relative;
+    color: rgb(37, 126, 35);
+    background: rgb(223, 255, 218);
+    height: 450px;
+}
+
+#afterloginsection{
+    /* color: rgb(35, 70, 126); */
+    background: rgb(218, 226, 255);
+}
+
+#afterloginsection button{
+    display:inline-block;
+    margin: 0 20px;
+    width: 40%;
+    height: 60%;
+    color: rgb(0, 71, 185);
+    background: rgb(138, 163, 255);
+    font-size: 220%;
+    line-height: 200%;
+    font-weight: bold;
+}
+#afterloginsection button > .tiny_text{
+    font-size: 70%;
+}
+#afterloginsection button:hover{
+    color: rgb(0, 45, 116);
+    background: rgb(74, 113, 255);
+}
+#afterloginsection button:active{
+    color: rgb(0, 25, 65);
+    background: rgb(37, 84, 255);
+}
+
+.text{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 170%;
+    line-height: 250%;
+}
+
+.subject{
+    font-size: 200%;
+    font-weight: bold;
+    color: rgb(0, 51, 171);
+}
+
+.event_btn{
+    position: fixed;
+    width: 90%;
+    top: 90%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 15px;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: blanchedalmond;
+    color:brown;
+}
+
+.event_btn:hover{
+    border: none;
+    font-weight: bold;
+    background-color: rgb(251, 185, 86);
+    color:rgb(165, 12, 12);
+}
+
+.event_btn:active{
+    border: none;
+    font-weight: bold;
+    background-color: rgb(255, 153, 0);
+    color:rgb(160, 0, 0);
+}
