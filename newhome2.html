@@ -8,56 +8,23 @@
 
     <title>이때어때</title>
 
-    <!--for SEO / <meta name="속성 값(description, keywords, author)" content="내용">-->
-
-    <!--Open Graph-->
-    <!--http://ogp.me/-->
-    <meta property="og:type" cotent="website" />
-    <meta property="og:site_name" content="이때어때" />
-    <meta property="og:title" content="이때어때_한번에 끝내는 면접 시간 공유" />
-    <meta property="og:description" content="이때어때는 면접관과 면접자의 시간 조율 편리성을 위해 만들어졌습니다." />
-    <!-- <meta property="og:image" content="./images/이때어때_seo.jpg" />
-    <meta property="og:url" content="https://~~.co.kr" /> -->
-
-    <!--Twitter Card-->
-    <!--https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started-->
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:site" content="이때어때" /> 
-    <meta property="twitter:title" content="이때어때_한번에 끝내는 면접 시간 공유" />
-    <meta property="twitter:description" content="이때어때는 면접관과 면접자의 시간 조율 편리성을 위해 만들어졌습니다." />
-    <!-- <meta property="twitter:image" content="./images/이때어때_seo.jpg" /> -->
-    <!-- <meta property="twitter:url" content="https://~~.co.kr" /> -->
-
-    <!--파비콘-->
-    <!--<link rel="shortcut icon" href="favicon.ico" />-->
-    <link rel="icon" href="./favicon.png" />
-    <!--브라우저 스타일 초기화-->
-    <!--이 부분은 reset.css로 복붙해서 폴더 내 css파일 추가해도 괜찮 / 작업 css 파일에 @import "reset.css" 필요할듯-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
-    <!--Google Fonts - 나눔고딕-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
-    <!--Google Material Icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-
     <link rel="stylesheet" href="./css/new.css" />
     <script defer src="./js/main.js"></script>
 </head>
-
 <body>
     <img id="banner" src="./images/banner.png" style="filter:brightness(80%); border-radius: 10px;"></img>
     <div class="main-container">
         <div class="home2-container">
-            <div class="section2">
+            <div class="section2 notLeftButton notRightButton">
                 <p class="text">안녕하세요 <span class="user_name">땡땡땡</span>님!<p>
                 <p class="text">아래 이벤트 생성 버튼을 눌러주세요</p>
             </div>
-            <div class="section2">
-                <button class="select_btn" onclick="location.href='./event.html'">
+            <div class="section2" id = "button-section2">
+                <button class="select_btn notRightButton" id="left-button">
                     <p>이벤트 생성 및 확인</p>
                     <p class="sub_text">면접관용</p>
                 </button>
-                <button class="select_btn" onclick="location.href='./timetable.html'">
+                <button class="select_btn rightButton notLeftButton" id="right-button" onclick="location.href='./timetable.html'">
                     <p>면접 가능 시간 체크</p>
                     <p class="sub_text">면접자용</p>
                 </button>
